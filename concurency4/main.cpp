@@ -77,7 +77,10 @@ string_vector listDirectory(std::string&& dir)
     std::for_each(futures.begin(), futures.end(), [&listing](std::future<string_vector>& f)
     {
         string_vector lst = f.get();
-        std::copy(lst.begin(), lst.end(), std::back_inserter(listing));
+        // instead of copy we are moving;
+        std::copy(std::make_move_iterator(std::begin(lst)),
+                  std::make_move_iterator(std::end(lst)),
+                  std::back_inserter(listing));
     });
 
     return listing;
