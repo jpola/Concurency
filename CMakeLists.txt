@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.1)
-project (concurency)
+project (Concurency)
 
 ADD_DEFINITIONS(-std=c++11 -pthread)
 
@@ -20,3 +20,5 @@ add_subdirectory(concurency2)
 add_subdirectory(concurency3)
 add_subdirectory(concurency4)
 add_subdirectory(concurency5)
+add_subdirectory(concurency6)
+

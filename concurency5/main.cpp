@@ -29,6 +29,14 @@ struct Result
     {
 
     }
+
+    Result & operator=(Result&& r)
+    {
+        files = std::move(r.files);
+        dirs = std::move(r.dirs);
+
+        return *this;
+    }
 };
 
 
@@ -50,10 +58,8 @@ Result listDir (path && dir)
     return result; //RVO;
 }
 
-int main(int argc, char *argv[])
+std::vector<std::string> listAllFiles(std::string& root)
 {
-
-    std::string root("/home/jpola/Projects");
     std::vector<path> dirsToDo;
     dirsToDo.push_back(root);
 
@@ -66,7 +72,7 @@ int main(int argc, char *argv[])
         std::vector<std::future<Result>> futures;
 
         //limit the number of tasks to 4
-        for (int i = 0; i < 4 && !dirsToDo.empty(); ++i)
+        for (int i = 0; i < 8 && !dirsToDo.empty(); ++i)
         {
             /* We are poping down the directories to do from back to beginning
             *  pop_back Removes last element.
@@ -75,7 +81,7 @@ int main(int argc, char *argv[])
             *  Firstly we have moved the last element
             *  so later we have to remove it from the list (pop_back)
             */
-            auto ftr = std::async(&listDir, std::move(dirsToDo.back()));
+            auto ftr = std::async(std::launch::async, &listDir, std::move(dirsToDo.back()));
             dirsToDo.pop_back();
             futures.push_back(std::move(ftr));
         }
@@ -89,9 +95,9 @@ int main(int argc, char *argv[])
                 futures.pop_back();
                 Result result = ftr.get(); //Get the result;
                 //back inserter will do push backs - which means it will add the elements to the end of the vector
-                std::copy(result.files.begin(), result.files.end(), std::back_inserter(files));
+                std::move(result.files.begin(), result.files.end(), std::back_inserter(files));
                 //add (sub)directories to be parsed
-                std::copy(result.dirs.begin(), result.dirs.end(), std::back_inserter(dirsToDo));
+                std::move(result.dirs.begin(), result.dirs.end(), std::back_inserter(dirsToDo));
 
             }
         }
@@ -111,10 +117,31 @@ int main(int argc, char *argv[])
         }
     }
 
-    std::for_each(files.begin(), files.end(), [](std::string & s)
-    {
-        std::cout << s << "\n";
+    return files;
 
-    });
+}
+
+int main(int argc, char *argv[])
+{
+    std::string root("/home/jpola/OpenFOAM");
+
+    auto startTime = std::chrono::system_clock::now();
+
+    for (int i = 0; i < 25; i++)
+        auto files = listAllFiles(root);
+
+    auto endTime = std::chrono::system_clock::now();
+
+    auto duration = (endTime - startTime)/25;
+    auto durationMs = std::chrono::duration_cast<std::chrono::microseconds>(duration);
+
+    std::cout << "\nSearch performed in " << durationMs.count() << std::endl;
+
+
+//    std::for_each(files.begin(), files.end(), [](std::string & s)
+//    {
+//        std::cout << s << "\n";
+
+//    });
 
 }
