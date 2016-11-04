@@ -177,6 +177,7 @@ void listAllFiles(std::string& root)
         }
     }
 
+    //we are going out of scope of MonitorResult so we can get the data from it.
     auto r = result.getResult();
     std::for_each(r.files.begin(), r.files.end(), [](std::string & s)
     {
