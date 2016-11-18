@@ -25,4 +25,5 @@ add_subdirectory(concurency7)
 add_subdirectory(concurency8)
 add_subdirectory(concurency9)
 add_subdirectory(concurency10)
-
+add_subdirectory(concurency11)
+add_subdirectory(concurency12)
