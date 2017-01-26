@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="concurency8"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\concurency1\;CMake Files\concurency2\;CMake Files\concurency3\;CMake Files\concurency4\;CMake Files\concurency5\;CMake Files\concurency6\;CMake Files\concurency7\;CMake Files\concurency8\;CMake Files\concurency9\;CMake Files\concurency10\;CMake Files\concurency11\;CMake Files\concurency12\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="concurency8">
+				<Option output="/home/jpola/ClionProjects/Concurency/build/concurency8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jpola/ClionProjects/Concurency/../Concurency/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jpola/ClionProjects/Concurency/include"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency/concurency8"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 concurency8"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="concurency8/fast">
+				<Option output="/home/jpola/ClionProjects/Concurency/build/concurency8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jpola/ClionProjects/Concurency/../Concurency/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jpola/ClionProjects/Concurency/include"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8"/>
+					<Add directory="/home/jpola/ClionProjects/Concurency/concurency8"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 concurency8/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jpola/ClionProjects/Concurency/cmake-build-debug/concurency8/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency8">
+			<Option target="concurency8"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency8/main.cpp">
+			<Option target="concurency8"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency1\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency1\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency2\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency2\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency3\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency3\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency4\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency4\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency5\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency5\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency6\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency6\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency7\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency7\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency8\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency8\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency9/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency9\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency9/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency9\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency10/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency10\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency10/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency10\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency11\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency11\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency12/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency12\"/>
+		</Unit>
+		<Unit filename="/home/jpola/ClionProjects/Concurency/concurency12/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\concurency12\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

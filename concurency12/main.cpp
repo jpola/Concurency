@@ -1,15 +1,15 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
-#include <string>
 #include <fstream>
 #include <future>
+
 // Future and promise revisited: What if we brake our promise to deliver a value?
 
-/// Future - class which is retriving data from the shared location
-/// Promise - class which is setting the value from shared location
+/// Future - class which is retrieving data from the shared location
+/// Promise - class which is setting the value into shared location
 
-// Broadcast a value by shared_future - object which is only retriving a value from shared location
+// Broadcast a value by shared_future - object which is only retrieving a value from shared location
 
 int factorial (std::shared_future<int> f)
 {
@@ -31,7 +31,7 @@ int main (int argc, const char* argv[])
 {
 
     std::promise<int> p;
-    std::future<int> f =p.get_future(); //share location
+    std::future<int> f = p.get_future(); //share location
     std::shared_future<int> sf = f.share(); //make shared future;
 
     // we want to run many function basing on the same value;

@@ -7,7 +7,7 @@
 // Future and promise revisited: What if we brake our promise to deliver a value?
 
 /// Future - class which is retriving data from the shared location
-/// Promise - class which is setting the value from shared location
+/// Promise - class which is setting the value inside shared location
 
 int factorial (std::future<int>& f)
 {
